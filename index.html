@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutas frescas Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <div class="logo">Frutas frescas</div>
+
+      <div class="nav-section">
+        <div class="nav-title">DASHBOARD</div>
+        <a href="#" class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-utensils"></i>
+          <span>Deliveries</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-comment"></i>
+          <span>Chat</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-user-circle"></i>
+          <span>Account</span>
+        </a>
+      </div>
+img
+      <div class="nav-section">
+        <div class="nav-title">OPTIONS</div>
+        <a href="#" class="nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Preferences</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-moon"></i>
+          <span>Night mode</span>
+          <label class="toggle-switch">
+            <input type="checkbox" />
+            <span class="toggle-slider"></span>
+          </label>
+        </a>
+      </div>
+
+      <div class="referral-card">
+        <h3>Earn $75 with referrals!</h3>
+        <p>Invite friends and earn bonus credits now!</p>
+        <a href="#" class="referral-btn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="greeting">hi john,!</h1>
+
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Find what you need..." />
+        </div>
+
+        <button class="notification-btn">
+          <i class="fas fa-bell"></i>
+        </button>
+        <img
+          src="https://images.app.goo.gl/uDQa9JrotL2kBK2b6"
+          alt="Profile"
+          class="profile-pic"
+        />
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard">
+        <div class="filters-bar">
+          <button class="filter-btn">
+            <i class="fas fa-filter"></i>
+            <span>Filter View</span>
+          </button>
+
+          <div class="filter-btn period-dropdown">
+            <i class="far fa-calendar-alt"></i>
+            <select>
+              <option>Current month</option>
+              <option>Previous week</option>
+              <option>Last quarter</option>
+              <option>Year to date</option>
+            </select>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <button class="export-btn">
+            <i class="fas fa-file-export"></i>
+            <span>Download Report</span>
+          </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-cards">
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Total Deliveries</h3>
+              <div class="value">923 orders</div>
+              <div class="stat-trend up">
+                <i class="fas fa-arrow-up"></i>
+                <span>+12% vs last month</span>
+              </div>
+            </div>
+            <div class="stat-icon icon-delivery">
+              <i class="fas fa-truck-loading"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Active hours</h3>
+              <div class="value">172 hours</div>
+              <div class="stat-trend up">
+                <i class="fas fa-arrow-up"></i>
+                <span>+8% vs last month</span>
+              </div>
+            </div>
+            <div class="stat-icon icon-hours">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Revenue</h3>
+              <div class="value">2,3k $</div>
+              <div class="stat-trend down">
+                <i class="fas fa-arrow-down"></i>
+                <span>-3% vs last month</span>
+              </div>
+            </div>
+            <div class="stat-icon icon-funds">
+              <i class="fas fa-coins"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two column dashboard sections -->
+        <div class="dashboard-sections">
+          <!-- Statistics Card -->
+          <div class="dashboard-card">
+            <div class="card-header">
+              <h2 class="card-title">Regional Data</h2>
+              <a href="#" class="more-link">
+                details <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+
+            <div class="area-stats">
+              <div class="area-item">
+                <div class="area-name">
+                  <span class="area-color center-area"></span>
+                  Downtown
+                </div>
+                <div>45%</div>
+              </div>
+
+              <div class="area-item">
+                <div class="area-name">
+                  <span class="area-color south-area"></span>
+                  Suburbs
+                </div>
+                <div>28%</div>
+              </div>
+
+              <div class="area-item">
+                <div class="area-name">
+                  <span class="area-color east-area"></span>
+                  Business District
+                </div>
+                <div>27%</div>
+              </div>
+            </div>
+
+            <div class="chart-container">
+              <div class="donut-chart"></div>
+              <div class="chart-hole">
+                <div class="total-label">Total deliveries</div>
+                <div class="total-value">923</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orders History Card -->
+          <div class="dashboard-card">
+            <div class="card-header">
+              <h2 class="card-title">Recent Orders</h2>
+              <a href="#" class="more-link">
+                view all <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+
+            <table class="orders-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Status</th>
+                  <th>Timestamp</th>
+                  <th>Total</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="order-id">#FE78923</span></td>
+                  <td>
+                    <div class="status status-completed">
+                      <i class="fas fa-check-circle"></i>
+                      Delivered
+                    </div>
+                  </td>
+                  <td>3/11/2025 at 2:45 PM</td>
+                  <td class="amount">$ 47,50</td>
+                  <td>
+                    <button class="info-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#FE78922</span></td>
+                  <td>
+                    <div class="status status-pending">
+                      <i class="fas fa-clock"></i>
+                      In Progress
+                    </div>
+                  </td>
+                  <td>3/11/2025 at 1:30 PM</td>
+                  <td class="amount">$ 23,75</td>
+                  <td>
+                    <button class="info-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="order-id">#FE78919</span></td>
+                  <td>
+                    <div class="status status-failed">
+                      <i class="fas fa-times-circle"></i>
+                      Cancelled
+                    </div>
+                  </td>
+                  <td>3/10/2025 at 6:12 PM</td>
+                  <td class="amount">$ 35,25</td>
+                  <td>
+                    <button class="info-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><span class="order-id">#FE78918</span></td>
+                  <td>
+                    <div class="status status-completed">
+                      <i class="fas fa-check-circle"></i>
+                      Delivered
+                    </div>
+                  </td>
+                  <td>3/10/2025 at 3:17 PM</td>
+                  <td class="amount">$ 28,75</td>
+                  <td>
+                    <button class="info-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
